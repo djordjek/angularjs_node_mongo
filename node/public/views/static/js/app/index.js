@@ -2,9 +2,8 @@
     'use strict';
 
     angular
-        .module('harness', ['ngRoute'])
-        .config(appConfig)
-        .run(run);
+        .module('harness')
+        .config(appConfig);
 
     appConfig.$inject = ['$routeProvider'];
 
@@ -14,7 +13,8 @@
                 templateUrl: 'static/html/home.html'
             })
             .when('/activities', {
-                templateUrl: 'static/html/activities.html'
+                templateUrl: 'static/html/activities.html',
+                controller: 'ActivityController'
             })
             .when('/activities/add', {
                 templateUrl: 'static/html/addEditActivity.html',

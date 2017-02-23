@@ -7,7 +7,7 @@
 
     activityApiService.$inject = ['$http'];
 
-    function userApiService($http) {
+    function activityApiService($http) {
 
         return {
             getActivity: getActivity,

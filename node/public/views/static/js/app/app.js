@@ -1,0 +1,2 @@
+ angular
+     .module('harness', ['ngRoute']);
